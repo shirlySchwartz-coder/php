@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: silver;
+}
+.container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.api-form {
+    padding: 20px;
+}
+.error {
+    color: #FF0000;
+}

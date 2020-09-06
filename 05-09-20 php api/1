@@ -1,0 +1,12 @@
+ <!-- action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" > -->
+
+ $posts = json_decode($posts_json, true);
+                //echo $posts ;
+                $len = count($posts);
+                echo $len;
+                
+                for( $i = 0 ; $i < $len; $i++ ) {
+                    echo  $posts[$i];
+                    echo "<br>";
+                }
+               
