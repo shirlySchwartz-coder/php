@@ -15,17 +15,17 @@
         
         $data ="" ;
         if($_SERVER['REQUEST_METHOD'] == 'GET') {
-            if(empty($_GET[$data])) {
+            if(empty($_GET['data'])) {
                 echo 'Search is empty';
             } else {
-                $data = $_GET['$data'];
+                $data = $_GET['data'];
                 echo $data;
             } if (checkdata($data)) {
+                
                 getsearch($data);
                 exit;
             }
         } 
-
         function checkdata($str) {
             $str = htmlentities($str);
             return $str;
